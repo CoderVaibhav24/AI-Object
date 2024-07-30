@@ -1,40 +1,128 @@
-Object Detection Application
-This Python-based object detection application leverages the YOLO (You Only Look Once) model for real-time object detection within images. It provides a user-friendly graphical interface, built using tkinter and enhanced with modern styling through the ttkbootstrap library.
+# AI-powered Object Identification App
 
-Key Features:
-Image Loading: Users can load images from their local file system.
-Object Detection: The YOLO model detects objects within the loaded image and displays both the modified image with bounding boxes and a list of detected objects.
-Dynamic Resizing: The GUI elements, including the displayed image and detected object list, dynamically resize with the application window, maintaining usability and aesthetics.
-Flow and Functionality:
-GUI Initialization:
+This Python-based object detection application leverages the YOLO (You Only Look Once) model for real-time object detection within images. It provides a user-friendly graphical interface, built using `tkinter` and enhanced with modern styling through the `ttkbootstrap` library. Users can load images, detect objects, and view the results dynamically.
 
-The application window is created with tkinter, and ttkbootstrap is used to apply a modern theme.
-The main layout consists of a main_frame divided into two sub-frames: left_frame for displaying images and right_frame for control buttons and detected objects list.
-Image Loading:
+## Getting Started
 
-Users can click the "Load Image" button to open a file dialog and select an image file (.jpg, .jpeg, .png).
-The selected image is loaded, resized (while maintaining its aspect ratio), and displayed in the left_frame.
-Object Detection:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Upon clicking the "Detect Objects" button, the YOLO model processes the loaded image to identify objects.
-The detected objects are visually marked with bounding boxes on the image, which is then updated in the left_frame.
-A summary of detected objects, including their count and types, is displayed in a list format in the right_frame.
-Dynamic Resizing:
+### Prerequisites
 
-The GUI components are configured to resize dynamically with the application window, ensuring that the image and object list expand and contract as the user resizes the window.
-Core Components:
-ObjectDetectionApp Class:
+What things you need to install the software and how to install them
 
-Initializes the main window and sets up the layout.
-Contains methods for loading images (load_image_dialog), displaying images (load_image), performing object detection (detect), and displaying detection results (display_detected_image and process_detected_objects).
-YOLO Model:
+```
+pip install pillow
+pip install ultralytics
+pip install ttkbootstrap
+```
 
-Utilizes the ultralytics library to load the pre-trained YOLO model (yolov8x.pt).
-Processes images to detect objects and outputs results, which include bounding boxes and class labels.
-Usage:
-Run the application script.
-Load an image by clicking the "Load Image" button and selecting a file.
-Click the "Detect Objects" button to perform object detection.
-View the processed image with bounding boxes and the list of detected objects.
-This application provides an intuitive interface for users to interact with object detection capabilities, making it suitable for both demonstration purposes and practical use cases in various projects.
+
+### Installing
+
+A step-by-step series of examples that tell you how to get a development environment running
+
+Install the necessary libraries
+
+```
+pip install pillow
+pip install ultralytics
+pip install ttkbootstrap
+```
+
+
+Download the YOLO model
+
+```
+Ensure you have the "yolov8x.pt" model file in your working directory
+```
+
+Run the application script
+
+```
+python object_detection_app.py
+```
+
+
+End with an example of getting some data out of the system or using it for a little demo
+
+1. Load an image by clicking the "Load Image" button and selecting a file.
+2. Click the "Detect Objects" button to perform object detection.
+3. View the processed image with bounding boxes and the list of detected objects.
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end-to-end tests
+
+Explain what these tests test and why
+
+```
+Test image loading
+Test object detection accuracy
+```
+
+
+### And coding style tests
+
+Explain what these tests test and why
+
+
+```
+Ensure PEP 8 compliance
+Verify code quality with pylint
+```
+
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [ttkbootstrap](https://ttkbootstrap.readthedocs.io/en/latest/) - Used for the modern GUI
+* [Pillow](https://python-pillow.org/) - Used for image processing
+* [Ultralytics YOLO](https://github.com/ultralytics/yolov5) - YOLO model for object detection
+* [Tkinter](https://docs.python.org/3/library/tkinter.html) - Standard Python interface to the Tk GUI toolkit
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
+## Authors
+
+* **Vaibhav** - *Object Detection * - [Your GitHub Profile](https://github.com/CoderVaibhav24)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
