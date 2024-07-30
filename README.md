@@ -95,7 +95,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Vaibhav** - *Object Detection * - [Your GitHub Profile](https://github.com/CoderVaibhav24)
+* **Vaibhav** - *Object Detection* - [Your GitHub Profile](https://github.com/CoderVaibhav24)
 
 
 ## License
